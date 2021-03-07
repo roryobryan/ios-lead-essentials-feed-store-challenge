@@ -92,9 +92,9 @@ class FeedStoreChallengeTests: XCTestCase, FeedStoreSpecs {
 	}
 	
 	func test_delete_hasNoSideEffectsOnEmptyCache() throws {
-//		let sut = try makeSUT()
-//
-//		assertThatDeleteHasNoSideEffectsOnEmptyCache(on: sut)
+		let sut = try makeSUT()
+
+		assertThatDeleteHasNoSideEffectsOnEmptyCache(on: sut)
 	}
 	
 	func test_delete_deliversNoErrorOnNonEmptyCache() throws {
